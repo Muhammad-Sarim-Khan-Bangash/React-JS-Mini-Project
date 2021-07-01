@@ -1,38 +1,87 @@
-.App {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background-color: #d2dbdd;
+}
+.heading_style {
+  padding: 30px 0;
   text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  background-color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cards {
+  width: 100%;
+  height: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  margin: 6%;
+  transition: all 0.5s;
+  background-color: #fff;
+  width: 21.25%;
+  border-radius: 12px;
+  box-shadow: 0px 13px 0px -7px rgba(0, 0, 0, 0.1);
+  float: left;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
 }
-
-.App-link {
-  color: #61dafb;
+.card_img {
+  width: 100%;
+  border-radius: 12px;
+  height: 235px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.card_info {
+  background-color: #fff;
+  padding: 20px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.card_category {
+  background-color: #fff;
+  color: #444;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.card_title {
+  background-color: #fff;
+  font-size: 18px;
+  margin-top: 5px;
+}
+a {
+  background-color: #fff;
+}
+button {
+  background-color: #fff;
+  outline: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  border: 1px solid #000;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  color: #444;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: #333;
+  color: #fff;
+  outline: none;
+}
+@media (max-width: 768px) {
+  .card {
+    float: none;
+    margin: 5%;
+    width: 90%;
   }
 }
